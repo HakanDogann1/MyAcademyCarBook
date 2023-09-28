@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAcademyCarBook.EntityLayer", "MyAcademyCarBook.EntityLayer\MyAcademyCarBook.EntityLayer.csproj", "{99E9898D-5CAE-4C3F-89E3-904566319A96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAcademyCarBook.DataAccessLayer", "MyAcademyCarBook.DataAccessLayer\MyAcademyCarBook.DataAccessLayer.csproj", "{A870FFE4-6CF6-4EA0-A048-CFC6B2E9169F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAcademyCarBook.BusinessLayer", "MyAcademyCarBook.BusinessLayer\MyAcademyCarBook.BusinessLayer.csproj", "{8F5380BB-3AA0-4B75-B2D6-30235558EEAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAcademyCarBook.DtoLayer", "MyAcademyCarBook.DtoLayer\MyAcademyCarBook.DtoLayer.csproj", "{A2E95A22-95AA-4E1C-925D-6D1D41198BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAcademyCarBook.PresentetionLayer", "MyAcademyCarBook.PresentetionLayer\MyAcademyCarBook.PresentetionLayer.csproj", "{9367FC03-E3B4-41F5-BD61-BD835DBB0FE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99E9898D-5CAE-4C3F-89E3-904566319A96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E9898D-5CAE-4C3F-89E3-904566319A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E9898D-5CAE-4C3F-89E3-904566319A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E9898D-5CAE-4C3F-89E3-904566319A96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A870FFE4-6CF6-4EA0-A048-CFC6B2E9169F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A870FFE4-6CF6-4EA0-A048-CFC6B2E9169F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A870FFE4-6CF6-4EA0-A048-CFC6B2E9169F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A870FFE4-6CF6-4EA0-A048-CFC6B2E9169F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5380BB-3AA0-4B75-B2D6-30235558EEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5380BB-3AA0-4B75-B2D6-30235558EEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5380BB-3AA0-4B75-B2D6-30235558EEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5380BB-3AA0-4B75-B2D6-30235558EEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E95A22-95AA-4E1C-925D-6D1D41198BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E95A22-95AA-4E1C-925D-6D1D41198BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E95A22-95AA-4E1C-925D-6D1D41198BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E95A22-95AA-4E1C-925D-6D1D41198BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9367FC03-E3B4-41F5-BD61-BD835DBB0FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9367FC03-E3B4-41F5-BD61-BD835DBB0FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9367FC03-E3B4-41F5-BD61-BD835DBB0FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9367FC03-E3B4-41F5-BD61-BD835DBB0FE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D942C427-2837-41E3-BA2B-5BDCB173C562}
+	EndGlobalSection
+EndGlobal

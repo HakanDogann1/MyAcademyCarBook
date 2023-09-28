@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CarDtos\" />
+    <Folder Include="CategoryDtos\" />
+    <Folder Include="BrandDtos\" />
+    <Folder Include="CarStatusDtos\" />
+    <Folder Include="LocationDtos\" />
+    <Folder Include="PriceDtos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyAcademyCarBook.EntityLayer\MyAcademyCarBook.EntityLayer.csproj" />
+  </ItemGroup>
+
+</Project>
