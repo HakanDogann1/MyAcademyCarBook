@@ -1,0 +1,26 @@
+﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Brand>
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <table class="table table-bordered" style="text-align:center;">
+        <tr>
+            <th>#</th>
+            <th>Marka</th>
+            <th>Durum</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.BrandId</th>
+                <td>@item.BrandName</td>
+                <td>@item.Status</td>
+                <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+</div>

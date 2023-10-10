@@ -1,8 +1,16 @@
+using MyAcademyCarBook.BusinessLayer.Abstract;
+using MyAcademyCarBook.BusinessLayer.Concrete;
+using MyAcademyCarBook.DataAccessLayer.Abstract;
+using MyAcademyCarBook.DataAccessLayer.Concrete;
+using MyAcademyCarBook.DataAccessLayer.EntityFramewrok;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<IBrandDal, EfBrandDal>();
+builder.Services.AddScoped<IBrandService, BrandManager>();
+builder.Services.AddDbContext<CarBookContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
