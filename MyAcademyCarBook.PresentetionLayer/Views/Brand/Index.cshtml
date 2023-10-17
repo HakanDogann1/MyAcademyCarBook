@@ -1,8 +1,8 @@
 ﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Brand>
 @{
-    Layout = null;
+    Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 <div class="container">
     <table class="table table-bordered" style="text-align:center;">
         <tr>
@@ -18,9 +18,11 @@
                 <th>@item.BrandId</th>
                 <td>@item.BrandName</td>
                 <td>@item.Status</td>
-                <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
-                <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                <td><a href="/Brand/DeleteBrand/@item.BrandId" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="/Brand/UpdateBrand/@item.BrandId" class="btn btn-outline-warning">Güncelle</a></td>
             </tr>
         }
     </table>
+    <br />
+    <a href="/Brand/AddBrand" class="btn btn-outline-success">Ekle</a>
 </div>

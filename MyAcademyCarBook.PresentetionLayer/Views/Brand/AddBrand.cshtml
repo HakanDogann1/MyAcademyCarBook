@@ -1,0 +1,16 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Brand
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <form method="post">
+            <label>Marka</label>
+            <input type="text" asp-for="BrandName" class="form-control" style="border:1px solid #222"/>
+            <br />
+       
+        <br />
+        <button class="btn btn-outline-success">Ekle</button>
+    </form>
+</div>
+

@@ -1,0 +1,37 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Brand
+@{
+    ViewData["Title"] = "UpdateBrand";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <form method="post">
+        <input type="hidden" asp-for="BrandId"/>
+        <label>Marka</label>
+        <input type="text" asp-for="BrandName" class="form-control" style="border:1px solid #222" />
+        <label>Statü</label>
+        @if (Model.Status == true)
+        {
+            <div>
+                <input type="radio" id="statuTrue" asp-for="BrandName" name="Statü" value="True" checked />
+                <label id="statuTrue">True</label>
+                <input type="radio" id="statuFalse" asp-for="BrandName" name="Statü" value="False" />
+                <label id="statuFalse">False</label>
+
+            </div>
+           
+        }
+        else
+        {
+            <div>
+                <input type="radio" id="statu" asp-for="BrandName" name="Statü" value="True" />
+                <input type="radio" id="statu" asp-for="BrandName" name="Statü" value="False" checked />
+            </div>
+           
+
+        }
+        <br />
+        <button class="btn btn-outline-warning">Kaydet</button>
+    </form>
+</div>
+
