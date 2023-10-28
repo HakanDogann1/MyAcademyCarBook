@@ -39,6 +39,11 @@ namespace MyAcademyCarBook.BusinessLayer.Concrete
             return _priceDal.GetById(id);
         }
 
+        public List<Price> TGetPricesWithCars()
+        {
+            return _priceDal.GetPricesWithCars();
+        }
+
         public void TRemove(int id)
         {
             _priceDal.Remove(id);

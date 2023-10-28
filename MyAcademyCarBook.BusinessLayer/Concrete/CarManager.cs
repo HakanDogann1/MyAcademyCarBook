@@ -32,6 +32,11 @@ namespace MyAcademyCarBook.BusinessLayer.Concrete
             return _carDal.GetAll();
         }
 
+        public List<Car> TGetAllCarsWithBrands()
+        {
+            return _carDal.GetAllCarsWithBrands();
+        }
+
         public Car TGetByFilter(Expression<Func<Car, bool>> filter)
         {
             return _carDal.GetByFilter(filter);
