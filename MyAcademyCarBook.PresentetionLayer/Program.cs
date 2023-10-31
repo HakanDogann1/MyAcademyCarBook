@@ -3,6 +3,8 @@ using MyAcademyCarBook.BusinessLayer.Concrete;
 using MyAcademyCarBook.DataAccessLayer.Abstract;
 using MyAcademyCarBook.DataAccessLayer.Concrete;
 using MyAcademyCarBook.DataAccessLayer.EntityFramewrok;
+using MyAcademyCarBook.EntityLayer.Concrete;
+using MyAcademyCarBook.PresentetionLayer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,10 @@ builder.Services.AddScoped<ICarDal, EfCarDal>();
 builder.Services.AddScoped<IPriceDal, EfPriceDal>();
 builder.Services.AddScoped<IPriceService, PriceManager>();
 builder.Services.AddDbContext<CarBookContext>();
+
+builder.Services.AddIdentity<AppUser, AppRole>(opt =>
+{
+}).AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<CarBookContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,7 +40,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
